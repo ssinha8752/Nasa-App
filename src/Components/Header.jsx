@@ -17,7 +17,6 @@ function Header() {
                     <input type="text" placeholder="Your name" required/>
                 </div>
                 <button className="btn">Lets Start</button>
-                <div class="signup">Not a member? <a href="#">Signup now</a></div>
             </form>
         </div>
     </div>
