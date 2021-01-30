@@ -8,7 +8,7 @@ function Header() {
       <video autoPlay loop muted id='video' style={{position:'fixed',zIndex:-1,width:'100%', opacity:1}}>
       <source src={backgroundVideo} type='video/mp4'/>
       </video>
-      <div style={{color:"white", textAlign:"center", paddingTop:"200px", fontSize:'50px', fontWeight:700}}>WELCOME TO THE SPACE</div>
+      <div style={{color:"white", textAlign:"center", paddingTop:"5%", fontSize:'50px', fontWeight:700}}>WELCOME TO THE SPACE</div>
       <div class="content">
             <div class="text">Explore It..</div>
             <form action="#">
