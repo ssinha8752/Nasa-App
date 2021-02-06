@@ -20,7 +20,7 @@ function Landing(){
 
     if (!photoData) return <div />;
     return (
-        <div>
+        <span>
         <Navbar/>
         <div>
         <img 
@@ -31,7 +31,7 @@ function Landing(){
         <p>{photoData.date}</p>
         <p>{photoData.explanation}</p>
         </div>
-        </div>
+        </span>
     );
 }
 
