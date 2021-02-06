@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Navbar from "./Navbar";
 
 function Landing(){
 
@@ -20,6 +21,8 @@ function Landing(){
     if (!photoData) return <div />;
     return (
         <div>
+        <Navbar/>
+        <div>
         <img 
             src={photoData.url}
             alt={photoData.title}
@@ -27,6 +30,7 @@ function Landing(){
         <h1>{photoData.title}</h1>
         <p>{photoData.date}</p>
         <p>{photoData.explanation}</p>
+        </div>
         </div>
     );
 }
