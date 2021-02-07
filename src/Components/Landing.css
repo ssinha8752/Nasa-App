@@ -1,0 +1,13 @@
+.nasa-pic{
+    display: flex;
+    padding: 40px;
+    margin: 0 auto;
+    max-height: 100% ;
+}
+
+.nasa-pic img{
+    width: 50%;
+    margin-right: 50px;
+    object-fit: contain;
+    max-height: 80vh;
+}

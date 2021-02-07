@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
+import './Landing.css'
 
 function Landing(){
 
@@ -22,14 +23,16 @@ function Landing(){
     return (
         <span>
         <Navbar/>
-        <div>
+        <div className="nasa-pic">
         <img 
             src={photoData.url}
             alt={photoData.title}
         />
+        <div>
         <h1>{photoData.title}</h1>
         <p>{photoData.date}</p>
         <p>{photoData.explanation}</p>
+        </div>
         </div>
         </span>
     );
