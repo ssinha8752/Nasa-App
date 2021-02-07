@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import './Landing.css'
+import wallpaper from "../assets/landing.jpg";
 
 function Landing(){
 
@@ -28,7 +29,7 @@ function Landing(){
             src={photoData.url}
             alt={photoData.title}
         />
-        <div>
+        <div style={{color:"white", height:'50%'}}>
         <h1>{photoData.title}</h1>
         <p>{photoData.date}</p>
         <p>{photoData.explanation}</p>

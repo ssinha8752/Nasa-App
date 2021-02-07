@@ -6,7 +6,7 @@ function Navbar(){
     return(
         <div>
         <ul>
-        <Link to='/'><div style={{fontSize:'50px', color:'black'}}><span class="fa fa-home"></span></div></Link>
+        <Link to='/'><div style={{fontSize:'30px', color:'black', width:'10px'}}><span class="fa fa-home" style={{width:'10%'}}></span></div></Link>
         </ul>
         </div>
     )
