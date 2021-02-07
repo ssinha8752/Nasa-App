@@ -24,7 +24,7 @@ function Landing(){
     return (
         <span>
         <Navbar/>
-        <div className="nasa-pic">
+        <div className="nasa-pic image">
         <img 
             src={photoData.url}
             alt={photoData.title}
@@ -33,6 +33,7 @@ function Landing(){
         <h1>{photoData.title}</h1>
         <p>{photoData.date}</p>
         <p>{photoData.explanation}</p>
+        <p className="note">( Please note that the Dynamic picture pf the day changes according to the US time )</p>
         </div>
         </div>
         </span>
