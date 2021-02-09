@@ -22,7 +22,7 @@ function Landing(){
 
     if (!photoData) return <div />;
     return (
-        <span>
+        <div>
         <Navbar/>
         <div className="nasa-pic image">
         <img 
@@ -33,10 +33,12 @@ function Landing(){
         <h1>{photoData.title}</h1>
         <p>{photoData.date}</p>
         <p>{photoData.explanation}</p>
-        <p className="note">( Please note that the Dynamic picture pf the day changes according to the US time )</p>
+        <p className="note">( Please note that the Dynamic picture pf the day changes according to the US time  )
+        <br/><br/>* Loading of the picture depends on the Internet connection
+        </p>
         </div>
         </div>
-        </span>
+        </div>
     );
 }
 
