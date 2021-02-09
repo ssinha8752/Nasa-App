@@ -6,9 +6,10 @@
 }
 
 .image {
-    background:url('../assets/landing.jpg');
+    background-image:url('../assets/landing.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
     position: fixed;
     width: 100%;
 }
