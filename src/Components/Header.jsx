@@ -10,7 +10,7 @@ function Header() {
   }
   return (
     <div>
-      <video autoPlay loop muted id='video' style={{position:'fixed',zIndex:-1,width:'100%', opacity:1}}>
+      <video autoPlay loop muted id='video' style={{position:'absolute', zIndex:-1, top:'0px', left:'0px', height:'100%', width:'100%', objectFit:'cover', opacity:'1'}}>
       <source src={backgroundVideo} type='video/mp4'/>
       </video>
       <div style={{color:"white", textAlign:"center", paddingTop:"5%", fontSize:'50px', fontWeight:700}}>WELCOME TO THE SPACE</div>
