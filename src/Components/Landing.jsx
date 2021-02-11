@@ -33,7 +33,7 @@ function Landing(){
         <h1>{photoData.title}</h1>
         <p>{photoData.date}</p>
         <p>{photoData.explanation}</p>
-        <p className="note">( Please note that the Dynamic picture pf the day changes according to the US time  )
+        <p className="note">( Please note that the <u>Dynamic picture of the day</u> changes according to the US time  )
         <br/><br/>* Loading of the picture depends on the Internet connection
         </p>
         </div>
