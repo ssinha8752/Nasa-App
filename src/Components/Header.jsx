@@ -1,13 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import backgroundVideo from '../assets/Rocket.mp4'
 import '../Components/Header.css'
 import {useHistory} from 'react-router-dom';
+import { connect, useSelector } from 'react-redux';
 
 function Header() {
   const history = useHistory();
+  
   function handleOnClick(){
-     history.push('/login');
-  }
+    history.push('/login');
+ }
+ 
+ function handleOnChange(e){
+  console.log(e.target.value)
+  setName({[e.target.name]:e.target.value })
+ }
+
+ const [name,setName] = useState({name:''})
+
   return (
     <div>
       <video autoPlay loop muted id='video' style={{position:'absolute', zIndex:-1, top:'0px', left:'0px', height:'100%', width:'100%', objectFit:'cover', opacity:'1'}}>
@@ -19,13 +29,14 @@ function Header() {
             <form action="#">
                 <div class="field">
                     <span class="fa fa-user"></span>
-                    <input type="text" placeholder="Your name" required/>
+                    <input type="text" placeholder="Your name" name='name' required onChange={handleOnChange} value={name.name}/>
                 </div>
                 <button className="btn" onClick={handleOnClick}>Lets Start</button>
             </form>
         </div>
+        <div><h2>{name.name}</h2></div> 
     </div>
   );
 }
 
-export default Header;
+export default connect()(Header);
