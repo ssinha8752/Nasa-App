@@ -107,3 +107,18 @@ button{
 .btn {
     color: white;
 }
+
+.signature{
+    margin: auto;
+    text-align: center;
+    width: 330px;
+    border-radius: 10px;
+    padding: 10px 30px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+    top: 100px;
+    color: white;
+    font-weight: 700;
+}

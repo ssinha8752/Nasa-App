@@ -25,16 +25,16 @@ function Header() {
       </video>
       <div style={{color:"white", textAlign:"center", paddingTop:"5%", fontSize:'50px', fontWeight:700}}>WELCOME TO THE SPACE</div>
       <div class="content">
-            <div class="text">Explore It..</div>
+            <div className="text">Explore It..</div>
             <form action="#">
-                <div class="field">
+                <div className="field">
                     <span class="fa fa-user"></span>
                     <input type="text" placeholder="Your name" name='name' required onChange={handleOnChange} value={name.name}/>
                 </div>
                 <button className="btn" onClick={handleOnClick}>Lets Start</button>
-            </form>
-        </div>
-        <div><h2>{name.name}</h2></div> 
+            </form>    
+        </div> 
+        <div class="signature">Made by Shubham &copy;</div>
     </div>
   );
 }
